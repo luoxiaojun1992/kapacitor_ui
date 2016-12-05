@@ -75,10 +75,63 @@
 
 <body>
   <header>
-    <h1 class="logo">Welcome to Beego</h1>
-    <div class="description">
-      Beego is a simple & powerful Go web framework which is inspired by tornado and sinatra.
-    </div>
+    <h1 class="logo">Kapacitor UI</h1>
+    <form class="navbar-form navbar-right" name="myform" method="POST" action="/generate-tick">
+      <div class="form-group">
+        <input type="text" name="description" placeholder="Description" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="text" name="alert_name" placeholder="Alert name" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="text" name="measurement" placeholder="Measurement" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="text" name="group_by" placeholder="Group by" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="where" placeholder="where" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="period" placeholder="Period (min)" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="text" name="every" placeholder="Every (min)" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="text" name="sum" placeholder="Sum" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="max" placeholder="Max" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="min" placeholder="Min" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="mean" placeholder="Mean" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="text" name="crit" placeholder="Crit" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" class="form-control"> *
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Email" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="phone" name="phone" placeholder="Phone" class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea name="tick" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">Generate</button>
+      </div>
+    </form>
   </header>
   <footer>
     <div class="author">
