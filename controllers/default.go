@@ -90,8 +90,8 @@ const NEW_LINE = `
 `
 
 func (c *MainController) Get() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
+	c.Data["Website"] = "kapacitor.aocs.com.cn"
+	c.Data["Email"] = "luoxiaojun1992@sina.cn"
 	c.TplName = "index.tpl"
 }
 
